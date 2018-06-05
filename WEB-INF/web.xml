@@ -18,7 +18,7 @@
         <servlet-class>control.downloadServlet</servlet-class>
         <init-param>
             <param-name>fileRoot</param-name>
-            <param-value>d:/</param-value>
+            <param-value>/Project/Web/Download/</param-value>
         </init-param>
         <init-param>
             <param-name>contentType</param-name>
@@ -32,5 +32,18 @@
     <servlet-mapping>
         <servlet-name>downloadApk</servlet-name>
         <url-pattern>/downloadApk</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getVer</servlet-name>
+        <servlet-class>control.getApkVersion</servlet-class>
+        <init-param>
+            <param-name>ver</param-name>
+            <param-value>000.000.002</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getVer</servlet-name>
+        <url-pattern>/getVer</url-pattern>
     </servlet-mapping>
 </web-app>
